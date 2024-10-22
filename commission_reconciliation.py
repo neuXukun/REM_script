@@ -297,7 +297,7 @@ if __name__ == "__main__":
     all_commissions = all_commissions[desired_order]
  
     # Store final data
-    all_commissions.to_csv('all_commissions.csv', index=False)
+    all_commissions.to_csv('normalized_data.csv', index=False)
 
     # Caculate the total commissions each agent and agency got for commission period June 2024.
     june_2024_data = all_commissions[all_commissions['commission_period'] == '2024-06']
