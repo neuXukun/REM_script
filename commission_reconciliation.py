@@ -309,3 +309,5 @@ if __name__ == "__main__":
     print("Top 10 agents/agencies by commission payout for June 2024:")
     for index, row in top_10_agents_agencies.iterrows():
         print(f"{index + 1}. {row['normalized_name']}: ${row['commission_amount']:,.2f}")
+    
+    output_file = 'top_10_agents_agencies_june_2024.txt'
